@@ -1,0 +1,84 @@
+/* solutions.css */
+
+/* Specific styles for the Solutions page */
+
+.solutions {
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0; /* Start hidden for fade-in effect */
+    transition: opacity 1s ease-in-out;
+}
+
+.solutions h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.solution-packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.package {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.package h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.package p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.package ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.package ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    list-style: inside;
+}
+
+.basic-package {
+    background-color: #444444;
+    cursor: default;
+}
+
+.standard-package {
+    background-color: #222222;
+    cursor: default;
+}
+
+.premium-package {
+    background-color: #c7b654;
+    cursor: default;
+    color: #222222;
+}
+
+.package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
